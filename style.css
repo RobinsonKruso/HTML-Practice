@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-image: url('images/Rectangle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    line-height: 67px;
+    letter-spacing: 0.05em;
+}
+span{
+    display: block;
+    color: #FF6332;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1375px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img{
+    /* width: 30%; */
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.trips{
+    background-image: url(images/Group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h2 span{
+    display: inline;
+}
+h2{
+    position: relative;
+    z-index: 1;
+}
+/* .pos{ */
+.trips::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+}
